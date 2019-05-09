@@ -1,0 +1,101 @@
+.nav{
+    padding-bottom: 10%;
+    padding-top: 1em;
+    .row{
+        padding: 0 1em;
+        color:#fff;
+        justify-content: center;
+        text-align: center;
+        a{
+            text-decoration: none;
+        }
+        .col:nth-child(1){
+            padding-left: 1em;
+            a{
+                color: #ffffff;
+            }
+            .fab{
+                
+                text-align: center;
+                margin-right: 1em;
+                font-size: 1.2em;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                border-radius: 50%;
+                &:hover{
+                    background-color: #ffffff;
+                    color: #1f1f1f;
+                }
+            }
+        }
+        .col:nth-child(2){
+            padding-right: 1em;
+            padding-top: 1em;
+            a{
+                padding: 0.5em;
+                margin: 1em;
+                text-transform: uppercase;
+                color: #ffffff;
+                box-shadow: .5px 5px 5px rgba($color: #51145c, $alpha: .8);
+                &:nth-child(1){
+                    &:before{
+                        content: '\f0e0';
+                        font-family: "Font AweSome 5 Free";
+                        margin-right: 0.5em;
+                    }
+                }
+                &:nth-child(2){
+                    &:before{
+                        content: '\f0c7';
+                        font-family: "Font AweSome 5 Free";
+                        margin-right: 0.5em;
+                    }
+                }
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px){
+    .nav{
+        padding-bottom: 5%;
+        .row{
+            a{
+
+            }
+            .col:nth-child(1){
+                text-align: left;
+                a{
+        
+                }
+                .fab{
+                    &:hover{
+      
+                    }
+                }
+            }
+            .col:nth-child(2){
+                text-align: right;
+                a{
+          
+                    &:nth-child(1){
+                        &:before{
+              
+                        }
+                    }
+                    &:nth-child(2){
+                        &:before{
+                   
+                        }
+                    }
+                    &:hover{
+                 
+                    }
+                }
+            }
+        }
+    }
+}

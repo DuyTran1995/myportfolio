@@ -1,0 +1,83 @@
+.getintouch{
+    margin-top: 2em;
+    .container{
+        padding-top: 1em;
+        padding-bottom: 3em;
+        background-color: #ffffff;
+        text-align: center;
+        .row{
+            flex-direction: column;
+            padding: 4em 10%;
+            .col:nth-child(1){
+                justify-content: space-around;
+                display: flex;
+                align-items: center;
+                img{
+                    display: block;
+                    width: 10%;
+                    
+                }
+                p{
+                    padding-left: 5%;
+                    text-align: left;
+                }
+            }
+            .col:nth-child(2){
+                text-align: left;
+                padding-left: 20%;
+                p{
+                    position: relative;
+                    left: -200px;
+                    visibility: hidden;
+                    display: block;
+                    transition: all .5s;
+                    &:before{
+                        content: '\f00c';
+                        font-family: "Font AweSome 5 Free";
+                        font-weight: 900;
+                        margin-right: 0.5em;
+                        color: mediumseagreen;
+                    }
+                }
+            }
+            .col:nth-child(3),
+            .col:nth-child(4){
+                text-align: left;
+                padding-left: 15%;
+                p{
+                    
+                }
+                a{
+                    margin-left: 0.5em;
+                    color: #9C27B0;
+                    text-decoration: none;
+                }
+            }
+            .col:nth-child(4){
+
+                p{
+                    
+                }
+                a{
+
+                }
+            }
+            .col:nth-child(5){
+                text-align: left;
+                padding-left: 15%;
+                a{
+                    display: inline-block;
+                    padding: 1em;
+                    color: #000000;
+                    .fab{
+                        font-size: 1.2em;
+                    }
+                    &:hover{
+                        background-color: #000;
+                        color:#ffffff;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+$bgbody: #f5f5f5;
+$nav: #9c27b0;
+$forme: #89229b;
+$contactme: #771e86;
+$mainmenu: #641971;
+$hovermainmenu: #f5f5f5;
+
+$color: () !default;
+$color: map-merge((
+    "bgbody": $bgbody,
+    "nav": $nav,
+    "forme": $forme,
+    "contactme": $contactme,
+    "mainmenu": $mainmenu,
+    "hovermainmenu": $hovermainmenu,
+), $color);
+@each $color-name,$color in $color{
+    .cl-#{$color-name}{
+        color: $color;
+    }
+}
+@each $bgcl-name,$color in $color{
+    .bgcl-#{$bgcl-name}{
+        background-color: $color;
+    }
+}

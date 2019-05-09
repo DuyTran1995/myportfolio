@@ -1,0 +1,25 @@
+.education{
+    margin-bottom: 2em;
+    .container{
+        background-color: #ffffff;
+        text-align: center;
+        padding-top: 1em;
+        .row{
+            .col{
+                p{
+                    text-align: center;
+                    color: #9C27B0;
+                }
+                h4{
+                    font-weight: 300;
+                    text-align: center;
+                }
+                .date{
+                    color: #8a8a8a;
+                    font-family: monospace;
+                    font-size: 1.1em
+                }
+            }
+        }
+    }
+}

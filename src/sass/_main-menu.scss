@@ -1,0 +1,40 @@
+.main-menu{
+    .container{
+        .row{
+            .col{
+                display: flex;
+                justify-content: center;
+                .menu{
+                    display: flex;
+                    list-style: none;
+                    margin: 0;
+                    justify-content: center;
+                    li{
+                        text-align: center;
+                        a{
+                            font-weight: bold;
+                            display: block;
+                            padding: 1em;
+                            text-decoration: none;
+                            color: rgba(255,255,255,0.6);
+                            transition: .5s all;
+                            &:hover{
+                                color: #ffffff;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+.visible{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #641971;
+    color:#ccc;
+}

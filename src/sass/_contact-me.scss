@@ -1,0 +1,37 @@
+.contactme{
+    padding: 1em;
+    .container{
+        .row{
+            text-align: center;
+            a{
+                text-decoration: none;
+                color: #fff;
+                display: block;
+                padding: .5em;  
+            }
+            .col:nth-child(1){
+                &:before{
+                    font-family: "Font AweSome 5 Free";
+                    content: '\f0e0';
+                    color: #ffffff;
+                }
+            }
+            .col:nth-child(2){
+                &:before{
+                    font-family: "Font AweSome 5 Free";
+                    content: '\f3cd';
+                    color: #ffffff;
+                    font-weight: 900;
+                }
+            }
+            .col:nth-child(3){
+                &:before{
+                    font-family: "Font Awesome 5 Free"; 
+                    font-weight: 900; 
+                    content: "\f007";
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}

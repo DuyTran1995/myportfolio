@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=vietnamese');
+*{
+    box-sizing: border-box;
+}
+body,
+html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+}
+.container{
+    max-width: auto;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+[class*='col']{
+    flex: 1;
+    // border: 1px solid #000;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    // margin-right: -15px;
+    // margin-left: -15px;
+}
+// Custom Col 12 Grid
+@for $i from 1 through 12{
+    $grid : 100%/12*$i;
+    .col-#{$i}{
+        width: $grid;
+    }
+}
+
+// Custom Multi Screen
+@each $rps in(
+    sm 576px 540px,
+    md 768px 720px,
+    lg 992px 960px,
+    xl 1200px 1140px
+){
+    @media screen and (min-width: #{nth($rps,2)}){
+        .container{
+            max-width: #{nth($rps,3)};
+        }
+        @for $i from 1 through 12{
+            $grid : 100%/12*$i;
+            .col-#{nth($rps,1)}-#{$i}{
+                width: $grid;
+                flex-basis: $grid;
+            }
+        }
+    }
+}
